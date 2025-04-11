@@ -1,0 +1,211 @@
+/* responsive.css */
+
+/* Tablet */
+@media (min-width: 769px) and (max-width: 992px) {
+    .features .container {
+        justify-content: space-around;
+    }
+
+    .feature {
+        max-width: 45%;
+    }
+}
+
+/* responsive.css */
+
+/* Kích thước màn hình rất nhỏ (điện thoại) */
+@media (max-width: 576px) {
+    /* CSS cho các thiết bị di động nhỏ */
+
+    /* Header */
+    #header {
+        padding: 5px 15px; /* Giảm padding */
+    }
+
+    #header .logo h1 a {
+        font-size: 20px; /* Giảm kích thước logo */
+    }
+
+    #mobile-menu {
+        padding: 5px 15px; /* Giảm padding nút menu mobile */
+    }
+
+    #mobile-menu span {
+        font-size: 20px; /* Giảm kích thước text nút menu mobile */
+    }
+
+    #header nav.open {
+        top: 50px; /* Điều chỉnh vị trí menu mở */
+    }
+
+    #header nav ul li a {
+        padding: 12px 15px; /* Giảm padding các mục menu */
+        font-size: 16px; /* Giảm kích thước font menu */
+    }
+
+    /* Slider */
+    #slider {
+        height: auto; /* Điều chỉnh chiều cao tự động */
+        padding-top: 80px; /* Thêm padding trên để không bị header che khuất */
+        padding-bottom: 40px;
+        background-position: center top; /* Đảm bảo hình nền hiển thị tốt */
+    }
+
+    #slider h4 {
+        font-size: 14px;
+    }
+
+    #slider .m-72 {
+        font-size: 30px;
+        margin-top: 10px;
+    }
+
+    #slider p {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+
+    /* Culture */
+    #culture {
+        margin-top: 60px; /* Giảm margin top */
+    }
+
+    .m-36 {
+        font-size: 28px; /* Giảm kích thước tiêu đề */
+    }
+
+    .title hr.round {
+        width: 60px; /* Thu nhỏ đường kẻ tiêu đề */
+        border-width: 2px;
+    }
+
+    #culture .content,
+    #festival .sub-info,
+    #food .sub-info {
+        width: 95%; /* Tăng chiều rộng nội dung */
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+
+    #culture .information h1.title-info {
+        font-size: 20px; /* Giảm kích thước tiêu đề thông tin */
+    }
+
+    #culture .information p {
+        font-size: 14px;
+        margin-top: 15px;
+    }
+
+    #culture .information img.img {
+        width: 90%; /* Tăng kích thước ảnh */
+    }
+
+    /* Festival */
+    #festival {
+        margin-top: 60px;
+    }
+
+    #festival .row {
+        flex-direction: column; /* Xếp dọc các item lễ hội */
+        align-items: center;
+    }
+
+    #festival .row-container {
+        width: 90%;
+        margin-bottom: 20px;
+        min-width: auto; /* Loại bỏ min-width */
+    }
+
+    #festival .row-item h2.m-18 {
+        font-size: 16px;
+    }
+
+    #festival .time-fv {
+        font-size: 10px;
+        padding: 5px 15px;
+    }
+
+    /* Food */
+    #food {
+        margin-top: 60px;
+    }
+
+    #food .food-info h2 {
+        font-size: 20px;
+        text-align: center; /* Căn giữa tiêu đề món ăn */
+    }
+
+    #food .food-info img {
+        width: 95%; /* Tăng kích thước ảnh món ăn */
+    }
+
+    #food .food-info p {
+        font-size: 14px;
+        text-align: left; /* Căn trái lại đoạn văn */
+    }
+
+    /* Contact Area */
+    .contact-area {
+        padding: 60px 0; /* Giảm padding */
+    }
+
+    .contact-area .title h1 {
+        font-size: 24px;
+    }
+
+    .contact-area .title p {
+        font-size: 12px;
+    }
+
+    .contact-area .form-area .col-lg-6 {
+        width: 100%; /* Form chiếm toàn bộ chiều rộng */
+        margin-bottom: 15px;
+    }
+
+    .contact-area .form-area .primary-btn {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    /* Footer */
+    #footer {
+        padding: 40px 10px; /* Giảm padding footer */
+        height: auto; /* Điều chỉnh chiều cao tự động */
+    }
+
+    #footer .footer-heading h2 a {
+        font-size: 24px;
+    }
+
+    #footer .footer-menu a {
+        font-size: 14px;
+        margin: 5px 0; /* Giảm margin các link */
+    }
+
+    #footer .fa-brands {
+        font-size: 18px;
+        height: 30px;
+        width: 30px;
+        padding-top: 6px;
+        margin: 5px;
+    }
+
+    #footer .copyright {
+        font-size: 12px;
+        margin-top: 30px;
+    }
+}
+
+/* Các breakpoint nhỏ hơn nữa nếu cần */
+@media (max-width: 480px) {
+    /* Điều chỉnh cho các thiết bị siêu nhỏ */
+    #slider .m-72 {
+        font-size: 24px;
+    }
+
+    .m-36 {
+        font-size: 24px;
+    }
+
+    /* ... các điều chỉnh khác cho màn hình rất nhỏ ... */
+}

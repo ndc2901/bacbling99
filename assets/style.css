@@ -1,0 +1,427 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+html {
+    font-family: "Lexend Deca", sans-serif;
+    box-sizing: border-box;
+    background-color: #f9f9ff;
+}
+
+p{
+    margin-top: 20px;
+    text-align: justify;
+    font-weight: 300;
+}
+
+.img{
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.title{
+    text-align: center;
+    justify-content: center;
+}
+.round{
+    margin: auto;
+}
+
+.m-36{
+    font-size: 36px;
+    color: #efba6c;
+}
+#header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px;
+    padding: 0px 10px;
+    text-transform: uppercase;
+    width: 100%;
+    color: white;
+    background-color: transparent; /* Background trong suốt ban đầu */
+    z-index: 1000;
+    transition: background-color 0.3s ease-in-out; /* Hiệu ứng mượt mà cho background */
+}
+
+#header.scrolled {
+    background-color: rgba(0, 0, 0, 0.7); /* Background đen mờ khi cuộn */
+}
+
+#header .logo{
+    
+}
+#header .menu{
+    display: flex;
+    list-style-type: none;
+    margin: 5px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    margin-left: 400px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#header li{
+    padding: 20px;
+}
+
+#header li a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Slider */
+
+#slider{
+    background: url(./img/Banner/baner1.jpeg) top center/ cover no-repeat ;
+    height: 729px;
+    text-transform: uppercase;
+}
+
+#slider h4{
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding-top: 350px;
+}
+
+#slider .m-72{
+    font-size: 72px;
+}
+
+#slider p{
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    max-width: 800px; /* Giới hạn chiều rộng đoạn văn */
+    margin-left: auto; /* Căn giữa đoạn văn */
+    margin-right: auto; /* Căn giữa đoạn văn */
+    text-transform: none;
+}
+
+#slider h4,h1,p{
+    
+}
+#slider .text-content{
+
+}
+#slider .text-white{
+    color: white;
+    text-align: center;
+
+}
+
+/* Culture */
+#culture{
+    margin-top: 100px;
+}
+#culture .title{
+    text-align: center;
+    justify-content: center;
+}
+
+#culture .content{
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    margin: auto; 
+}
+
+#culture .information{
+    margin-top: 50px;
+}
+
+/* Festival */
+
+#festival {
+    margin-top: 100px;
+}
+
+#festival .sub-info{
+    margin: auto;
+    margin-top: 40px;
+    text-align: center;
+    width: 75%;
+}
+
+#festival .row{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: center;
+    margin: auto;
+    margin-top: 50px;
+}
+
+#festival .row-container{
+    position: relative;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-top: 15px;
+    overflow: hidden;
+    min-width: 300px;
+    display: block; /* Chuyển thành block để lớp phủ chiếm toàn bộ */
+    height: auto; /* Điều chỉnh chiều cao nếu cần */
+    opacity: 0;
+    transform: translateY(20px); /* Bắt đầu dịch xuống một chút */
+    transition-property: opacity, transform; /* Liệt kê các thuộc tính transition */
+    transition-duration: 0.8s; /* Thời gian hiệu ứng là 0.8 giây */
+    transition-timing-function: ease-in-out; /* Kiểu hiệu ứng */
+}
+#festival .row-container.fade-in {
+    opacity: 1; /* Hiện hoàn toàn */
+    transform: translateY(0); /* Trở về vị trí ban đầu */
+}
+
+#festival .row-img{
+    display: block;
+    filter: brightness(0.7);
+}
+
+#festival .row-img:hover{
+    filter: brightness(1);
+}
+#festival .row-item{
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    z-index: 10;
+    right: 0;
+    left: 0;
+    color: white;
+
+}
+
+#festival .time-fv{
+    font-size: 12px;
+    font-weight: 300;
+    display: inline-block;
+    padding: 5px 30px;
+    background-color: #EFBA6C;
+    border-radius: 30px;
+    margin-bottom: 16px;
+    color: white;
+}
+
+#festival .m-18{
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+}
+
+/* FOOD */
+
+#food{
+    margin-top: 100px;
+}
+
+#food .sub-info{
+    width: 75%;
+    margin: auto;
+    margin-top: 40px;
+    text-align: justify;
+
+}
+
+#food .food-info{
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    margin-top: 70px;
+}
+
+/* Start Contact Area (Tựa mẫu) */
+.contact-area {
+    padding: 80px 0;
+    background-color: #f9f9ff; /* Nền trắng nhạt */
+    text-align: center; /* Căn giữa nội dung tiêu đề */
+}
+
+.contact-area .container {
+    max-width: 768px; /* Giới hạn chiều rộng container để form không quá rộng */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.contact-area .menu-content {
+    margin-bottom: 40px;
+}
+
+.contact-area .title h1 {
+    font-size: 28px; /* Kích thước tiêu đề */
+    color: #222;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.contact-area .title p {
+    font-size: 14px; /* Kích thước mô tả */
+    color: #777;
+    line-height: 1.6;
+}
+
+.contact-area .form-area {
+    margin-top: 30px; /* Khoảng cách giữa tiêu đề và form */
+}
+
+.contact-area .form-area .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.contact-area .form-area .col-lg-6 {
+    width: calc(50% - 20px);
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+}
+
+.contact-area .form-area .form-group {
+    margin-bottom: 0;
+}
+
+.contact-area .form-area .common-input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd; /* Viền xám nhạt */
+    border-radius: 5px;
+    font-size: 14px;
+    color: #555;
+    background-color: transparent; /* Nền xám nhạt */
+    transition: border-color 0.2s ease-in-out;
+}
+
+.contact-area .form-area .common-input:focus {
+    outline: none;
+    border-color: #a75ce0; /* Màu tím khi focus */
+}
+
+.contact-area .form-area .common-input.mb-20 {
+    margin-bottom: 20px;
+}
+
+.contact-area .form-area textarea.common-textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #555;
+    background-color: transparent;
+    min-height: 120px;
+    transition: border-color 0.2s ease-in-out;
+}
+
+.contact-area .form-area textarea.common-textarea:focus {
+    outline: none;
+    border-color: #a75ce0; /* Màu tím khi focus */
+}
+
+.contact-area .form-area .primary-btn {
+    display: inline-block;
+    background: linear-gradient(to right, #a75ce0, #c737d9); /* Gradient tím */
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 30px;
+    border-radius: 25px; /* Hình bầu dục */
+    text-decoration: none;
+    transition: background 0.2s ease-in-out;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px; /* Khoảng cách với textarea */
+}
+
+.contact-area .form-area .primary-btn:hover {
+    background: linear-gradient(to right, #c737d9, #a75ce0); /* Đảo ngược gradient khi hover */
+}
+
+.contact-area .form-area .primary-btn span.lnr {
+    margin-left: 5px;
+}
+
+.contact-area .form-area .alert-msg {
+    margin-top: 20px;
+    font-size: 14px;
+    color: green; /* Màu thông báo thành công */
+}
+
+/* Footer */
+
+/* Footer section */
+#footer {
+    padding: 64px 16px;
+    background-color: #000;
+    height: 500px;
+
+}
+#footer .footer-heading{
+    margin-bottom: 30px;
+}
+#footer .socials-list{
+    padding-top: 25px;
+    width: 70%;
+    text-align: center;
+    margin: auto;
+}
+
+
+#footer h2 a{
+    font-size: 30px;
+    text-decoration: none;
+    color: #fff;
+    
+}
+
+#footer .footer-menu{
+    margin: auto;
+    margin-bottom: 30px;
+}
+#footer p{
+    margin: auto;
+    text-align: center;
+}
+#footer p a{
+    margin: 0px 20px;
+    color: #FFFFFF99;
+    color: #FFFFFF99;
+    text-decoration: none;
+    font-size: 15px;
+    
+}
+
+#footer .fa-brands{
+    color: #a3de83;
+    height: 40px;
+    width: 40px;
+    margin: auto;
+    margin-left: 10px;
+    font-size: 20px;
+    padding-top: 9px;
+    border: 1px solid #a3de83;
+    border-radius: 50%;
+    text-align: center;
+}
+#footer .copyright {
+    margin: auto;
+    margin-top: 60px;
+    color: #FFFFFF4D;
+    margin-bottom: 30px;
+}
+
+#footer .copyright a {
+    color: #FFFFFF4D;
+    padding-bottom: 30px;
+}
