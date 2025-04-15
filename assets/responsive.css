@@ -178,8 +178,8 @@
     }
 
     #footer .footer-menu a {
-        font-size: 14px;
-        margin: 5px 0; /* Giảm margin các link */
+        font-size: 12px;
+        margin: 5px 2px; /* Giảm margin các link */
     }
 
     #footer .fa-brands {
@@ -194,6 +194,48 @@
         font-size: 12px;
         margin-top: 30px;
     }
+
+    /* Slider*/
+    .js-slider{
+        width: 100%;
+        box-sizing: none;
+    }
+
+    .js-slider h3{
+        margin: 0;
+    }
+
+    .js-slider li{
+        margin-top: 30px;
+    }
+
+    .js-slider_item{
+        margin-left: 0;
+        width: 100%;
+        padding: 10px;
+
+    }
+
+    .js-slider_img img{
+        width: 220px;
+    }
+
+    .wo-caption{
+        margin-top: 50px;
+    }
+
+    .js-slider_nav_item{
+        width: 30px;
+        height: 30px;
+    }
+
+    .js-slider-indi{
+        padding: 10px;
+        margin: 5px;
+        border-radius: 10px;
+    }
+
+
 }
 
 /* Các breakpoint nhỏ hơn nữa nếu cần */
@@ -209,3 +251,4 @@
 
     /* ... các điều chỉnh khác cho màn hình rất nhỏ ... */
 }
+
